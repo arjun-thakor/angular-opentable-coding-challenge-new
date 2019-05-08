@@ -1,0 +1,26 @@
+<div class="container-fluid bg-secondary">
+  <div class="container">
+     <div class="pt-3 pb-5">
+        <h2 class="font-weight-normal text-light font-italic ft-lato">Find your best food by city.</h2>
+        <input type="text" ng-model="firstName" id="searchByCity" class="form-control text-capitalize" placeholder="Please Enter the city name here..."  name="xyz">
+        <button class="btn btn-danger mt-2 text-uppercase font-weight-bold" (click)="gotData(f)" id="searchForm"><i class="fas fa-search"></i> Search</button>
+     </div>
+  </div>
+</div>
+<div class="container">
+  <div id="user_message"></div>
+</div>
+<div class="container mt-3 mb-5">
+  <div class="card mb-2 cd-data" *ngFor="let details of restaurants_by_city.restaurants">
+     <div class="card-body">
+        <h5 class="card-title"><strong>{{details.name}}</strong></h5>
+        <p class="card-text" title="Addess"><i class="fas fa-map-marker-alt text-danger"></i> 
+           {{details.address}}, {{details.city}} {{details.state}} {{details.country}} {{details.postal_code}} 
+           <span class="badge badge-pill badge-primary ml-3 pl-2 pr-2" title="Price">Price : <i class="fas fa-dollar-sign"></i>{{details.price}}</span>
+           <span class="badge badge-pill badge-success ml-3 pl-2 pr-2" title="Phone number"><i class="fas fa-mobile-alt"></i> {{details.phone}}</span>
+           <span class="badge badge-pill badge-warning ml-3 pl-2 pr-2" title="Restaurant ID"><i class="fas fa-home"></i> {{details.id}}</span>
+           <a [href]="details.reserve_url" target="_blank" class="badge badge-pill badge-danger ml-3 pl-2 pr-2"><i class="fas fa-globe"></i> visit</a>
+        </p>
+     </div>
+  </div>
+</div>

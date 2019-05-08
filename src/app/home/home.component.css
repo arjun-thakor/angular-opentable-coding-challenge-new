@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.cd-data{
+    border-left: 4px solid rgb(49, 105, 143);
+    background-color: whitesmoke;
+}
+
+.main-container-height{
+    background-color: #1565C0;
+
+}
+.ft-lato{
+    font-family: 'Lato', sans-serif;
+}
