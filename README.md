@@ -1,6 +1,5 @@
 # angular-opentable-coding-challenge
-# angular-coding-challenge-opentable
-Coding challenge in Angular using OpenTable API
+Coding challenge in Angular using OpenTable RESTful API
 
 # AngularOpentableCodingChallenge
 
